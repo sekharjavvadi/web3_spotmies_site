@@ -7,7 +7,7 @@ import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Hero = () => (
-  <section
+  <section id="hero"
     className={`${styles.yPaddings} sm:pl-16 pl-6 relative md:h-[130vh] h-[90vh] slide-1-bg-image`}
   >
     {/* slide-1-bg-image add this class name for rocket 3d image */}
@@ -16,14 +16,14 @@ const Hero = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      className={`${styles.innerWidth} mx-auto flex flex-col mt-24`}
     >
       <div className="h-full flex justify-center items-center flex-col relative z-10 ">
         <motion.h1
           variants={textVariant(0.6)}
           className={`${styles.heroHeading} text-center`}
         >
-          We Help <span className="text-[#14a2b5]">Startups</span> Launch 🚀 Their Products In The New Era Of The
+          We Help <span className="text-[#14a2b5]">Startups</span> to Launch 🚀 Their Products In The New Era Of The
           Internet
         </motion.h1>
       </div>
